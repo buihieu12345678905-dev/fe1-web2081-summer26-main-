@@ -1,0 +1,19 @@
+<p>lab4 works!</p>
+
+<form [formGroup]="addForm" (ngSubmit)="submitForm()">
+     <div>
+    <label>ten</label>
+    <input type="text" name="name" ngModel />
+  </div>
+
+   <div>
+    <label>gia</label>
+    <input type="text" formControlName="price" />
+  </div>
+
+   <div>
+    <label>danh muc</label>
+    <input type="text" formControlName="category" />
+  </div>
+  <button type="submit">Them</button>
+</form>

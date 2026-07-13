@@ -1,0 +1,21 @@
+<p>lab4b2 works!</p>
+
+<form [formGroup]="addForm" (ngSubmit)="submitForm()">
+     <div>
+    <label></label>
+    <input type="text" name="username" ngModel />
+  </div>
+
+   <div>
+    <label></label>
+    <input type="text" formControlName="email" />
+  </div>
+
+   <div>
+    <label></label>
+    <input type="text" formControlName="password" />
+  </div>
+  <button type="submit">nhap</button>
+</form>
+
+
