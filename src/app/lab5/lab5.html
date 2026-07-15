@@ -1,0 +1,22 @@
+<p>lab5 works!</p>
+<table border="1" cellpadding="10" cellspacing="0">
+  <tr>
+    <th>ID</th>
+    <th>Tên truyện</th>
+    <th>Tác giả</th>
+    <th>Lượt xem</th>
+    <th>Hành động</th>
+  </tr>
+
+  @for (story of stories; track story.id) {
+  <tr>
+    <td>{{ story.id }}</td>
+    <td>{{ story.title }}</td>
+    <td>{{ story.author }}</td>
+    <td>{{ story.views }}</td>
+    <td>
+     <button (click)="deleteStory(story.id)">Xóa</button>
+    </td>
+  </tr>
+  }
+</table>
