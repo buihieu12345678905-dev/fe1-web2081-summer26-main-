@@ -1,0 +1,57 @@
+<div class="container">
+
+    <h2> Thêm Truyện</h2>
+
+    <form [formGroup]="addForm" (ngSubmit)="submitForm()">
+
+        <div class="form-group">
+            <label>Tên truyện</label>
+            <input
+                type="text"
+                formControlName="title"
+                placeholder="Nhập tên truyện">
+        </div>
+
+        <div class="form-group">
+            <label>Tác giả</label>
+            <input
+                type="text"
+                formControlName="author"
+                placeholder="Nhập tên tác giả">
+        </div>
+
+        <div class="form-group">
+            <label>Tên</label>
+            <input
+                type="text"
+                formControlName="name"
+                placeholder="Nhập tên ">
+        </div>
+
+        <div class="form-group">
+            <label>Lượt xem</label>
+            <input
+                type="number"
+                formControlName="views"
+                placeholder="Nhập lượt xem">
+        </div>
+
+        <button
+            type="submit"
+            [disabled]="loading">
+
+            {{ loading ? 'Đang gửi...' : ' Thêm truyện' }}
+
+        </button>
+
+    </form>
+
+    @if(success){
+    <p class="success">{{ success }}</p>
+    }
+
+    @if(error){
+    <p class="error">{{ error }}</p>
+    }
+
+</div>

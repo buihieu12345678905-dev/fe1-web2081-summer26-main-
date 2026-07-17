@@ -5,6 +5,7 @@ interface Story {
   id: number;
   title: string;
   author: string;
+  name: string;
   views: number;
 }
 

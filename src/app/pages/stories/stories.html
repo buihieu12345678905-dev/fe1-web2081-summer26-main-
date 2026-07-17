@@ -4,7 +4,9 @@
     <th>ID</th>
     <th>Tên truyện</th>
     <th>Tác giả</th>
+    <th>Tên</th>
     <th>Lượt xem</th>
+
     <th>Hành động</th>
   </tr>
 
@@ -13,6 +15,7 @@
     <td>{{ story.id }}</td>
     <td>{{ story.title }}</td>
     <td>{{ story.author }}</td>
+     <td>{{ story.name }}</td>
     <td>{{ story.views }}</td>
     <td>
      <button (click)="deleteStory(story.id)">Xóa</button>

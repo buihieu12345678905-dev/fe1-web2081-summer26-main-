@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from "@angular/forms";
 @Component({
   selector: 'app-lab4',
-  imports: [],
+  imports: [ReactiveFormsModule],
   templateUrl: './lab4.html',
   styleUrl: './lab4.css',
 })
